@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyridge Courier — a bush pilot flight game</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b1c2c; }
+  #game { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+  #fallback { position: fixed; inset: 0; display: none; place-items: center; color: #dfe9f2;
+    font: 16px/1.5 system-ui, sans-serif; text-align: center; padding: 24px; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="fallback"><p>This game needs JavaScript and a canvas.<br>Open it in a desktop browser over any static file server.</p></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
